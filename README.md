@@ -16,5 +16,6 @@ What's new in 1.4?
 - A run.bat file which lets you easily run the script. Well, not really, but it looks cooler like this :P
 
 ================================ RULES ================================
+
 1. Don't delete the 'options.txt' file or some features won't work
 
