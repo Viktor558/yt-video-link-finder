@@ -39,10 +39,24 @@ vidLink = "https://www.youtube.com" + vidLink
 print("Title: ", title)
 print("Link: ", vidLink)
 fo = open("options.txt", "r")
-fo.read(10)
-choice = fo.read(5)
-if choice == "true":
+s = fo.read()
+tofind = "auto_play="
+index = s.find(tofind)
+s = s[index+len(tofind):]
+if s.startswith("true"):
     webbrowser.open(vidLink)
+fo.seek(0)
+s = fo.read()
+tofind = "save_links_to_file="
+index = s.find(tofind)
+s = s[index+len(tofind):]
+if s.startswith("true"):
+    saveFile = open("savedLinks.txt", "a")
+    writeInFile = title + " | " + vidLink + "\n"
+    saveFile.write(writeInFile)
+    saveFile.close()
+    print("Video link saved!")
 
-print("Press ENTER to continue...")
+fo.close()
+print("Press ENTER to close...")
 input()
