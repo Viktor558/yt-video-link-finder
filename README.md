@@ -9,7 +9,7 @@ The script of this project is written in Python (python 3.5.2).
 In order to run them you have to install python (which you probably know just saying...)
 
 What's new in 1.7?
-- A save-links-to-file feature which allow the title and link of the video that you have been searching for to save in a file named "savedLinks.txt" in the same directory as the script. 
+- A save-links-to-file feature which allow the title and link of the video that you have been searching for to save in a file named "savedLinks.txt" in the same directory as the script. Tis feature is disabled by default in the options.txt file.
 
 What's new in 1.4?
 - An Auto-play feature which allows the video that you have been searching for to opens up in (your default) browser.
@@ -17,5 +17,4 @@ What's new in 1.4?
 
 ================================ RULES ================================
 
-1. Don't delete the 'options.txt' file or some features won't work
-
+1. Don't delete the 'options.txt' file or some features won't work. If you do just download it again.
