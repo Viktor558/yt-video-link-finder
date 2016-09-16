@@ -1,3 +1,4 @@
 All the info for this project is written in the README.md file in the main folder...
+You can also see all the versions of this program in the version_log.txt
 
 NOTE: This file will be deleted in the next version.
